@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Formulas Website</title>
+        <link rel="stylesheet" href="formulas-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+            <div class="item"><a class="sub-btn"><i class="fas fa-angle-down"></i>Arithmetic Progression Formulas  <i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="https://youtu.be/OUi6L9MHpzY" class="sub-item">Proof of nth term</a>
+                    <a href="https://youtu.be/xhah3xwVtSU" class="sub-item">Proof for sum of n terms</a>
+                </div>
+            </div>
+            <div class="item"><a class="sub-btn"><i class="fas fa-angle-down"></i>Trigonometry Formulas  <i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Proof of sin θ=P/H</a>
+                    <a href="#" class="sub-item">Proof of cos θ=B/H</a>
+                    <a href="#" class="sub-item">Proof of tan θ=P/B</a>
+                    <a href="#" class="sub-item">Proof of sec θ=1/cos θ</a>
+                    <a href="#" class="sub-item">Proof of cot θ=1/tan θ</a>
+                    <a href="#" class="sub-item">Proof of cosec θ=1/sin θ</a>
+                </div>
+            </div>
+            <div class="item"><a class="sub-btn"><i class="fas fa-angle-down"></i>Algebra and Quadratic Formulas  <i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="images/9convert.com - a plus b square or a plus b whole square Geometrical Explanation and Derivation_360p.mp4" class="sub-item">Proof of (a+b)2</a>
+                    <a href="https://youtu.be/TsaH0GR15V4" class="sub-item">Proof of (a-b)2 </a>
+                    <a href="https://youtu.be/9RHJt0GXLcY" class="sub-item">Proof of a3-b3</a>
+                    <a href="https://youtu.be/5x4gJPchSiY" class="sub-item">Proof of a3+b3</a>
+                    <a href="https://youtu.be/3HPyrM4kYhk" class="sub-item">Proof of (a – b)3</a>
+                    <a href="https://youtu.be/24gWbMSEVVw" class="sub-item">Proof of (x + a)(x + b)</a>
+                </div>
+            </div>
+            <div class="item"><a class="sub-btn"><i class="fas fa-angle-down"></i>Circle Formulas  <i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="https://youtu.be/gSyQPbrYR9A" class="sub-item">Proof of Circumference of the circle</a>
+                    <a href="https://youtu.be/gSyQPbrYR9A" class="sub-item">Proof of Area of the circle</a>
+                    <a href="https://youtu.be/UbOWduaAXsA" class="sub-item">Proof of Area of the sector of angle θ</a>
+                    <a href="#" class="sub-item">Proof of Length of an arc of a sector of angle θ</a>
+                </div>
+            </div>
+            <div class="item"><a class="sub-btn"><i class="fas fa-angle-down"></i>Surface Area and Volume Formulas  <i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="https://youtu.be/xuPl_8o_j7k" class="sub-item">Proof of Sphere area and volume</a>
+                    <a href="https://youtu.be/YA0xN128QGg" class="sub-item">Proof of Cylinder area and volume</a>
+                    <a href="https://youtu.be/rd8tbD2eekM" class="sub-item">Proof of Cone area and volume</a>
+                    <a href="https://youtu.be/dkm4yI8nrLE" class="sub-item">Proof of Cuboid area and volume</a>
+                    <a href="https://youtu.be/3ZJx30HWAis" class="sub-item">Proof of Cube area and volume</a>
+                </div>
+            </div>
+            <div class="item"><a class="sub-btn"><i class="fas fa-angle-down"></i>Statistics Formulas  <i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Proof of Mean of Grouped Data</a>
+                    <a href="#" class="sub-item">Proof of Mode of Grouped Data</a>
+                    <a href="#" class="sub-item">Proof of Median for a grouped data</a>
+                </div>
+            </div>
+            <div class="item"><a class="sub-btn"><i class="fas fa-angle-down"></i>Pair of Linear Equation in Two Variables Formulas  <i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Proof of ax+b=0</a>
+                    <a href="#" class="sub-item">Proof of ax+by+c=0</a>
+                    <a href="#" class="sub-item">Proof of ax+by+cz+d=0</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main">
+        <h1>Learn formulas in easy manner</h1>
+    </section>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // jquery for toggle sub menus
+            $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+
+            //jquery for expand and collapse the sidebar
+            $('.menu-btn').click(function(){
+                $('.side-bar').addClass('active');
+                $('.menu-btn').css("visibility", "hidden");
+
+            });
+
+            $('.close-btn').click(function(){
+                $('.side-bar').removeClass('active');
+                $('.menu-btn').css("visibility", "visible");
+            });
+        });
+    </script>
+
+</body>
+</html>
